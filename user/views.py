@@ -52,7 +52,7 @@ def user_logout(request):
 def dashboard(request):
     # Get IDs of pets already approved for adoption
     approved_pet_ids = AdoptionRequest.objects.filter(
-        status='approved'  # or whatever status name you use
+        status='approved' 
     ).values_list('pet_id', flat=True)
 
     # Fetch available pets excluding approved ones
