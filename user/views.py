@@ -36,12 +36,11 @@ def user_login(request):
         if user and not user.is_admin:
             login(request, user)
             return redirect('dashboard')
-
         else:
             messages.error(request, "Invalid credentials")
     return render(request, 'user/login.html')
 
-
+    
 #user logout
 def user_logout(request):
     logout(request)

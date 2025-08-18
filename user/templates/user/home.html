@@ -12,7 +12,7 @@
         }
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url("{% static 'user/images/pet_banner.jpg' %}") center/cover no-repeat;
+                        url("{% static 'images/pet_banner.jpg' %}") center/cover no-repeat;
             color: white;
             padding: 80px 20px;
             text-align: center;
@@ -43,6 +43,7 @@
         <a class="navbar-brand" href="{% url 'home' %}">🐾 Pet Adoption</a>
         <div class="ms-auto">
             <a href="{% url 'user_login' %}" class="btn btn-warning">Login</a>
+            <a href='/admin/' class="btn btn-warning">Admin</a>
         </div>
     </div>
 </nav>
